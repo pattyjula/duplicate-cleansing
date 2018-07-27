@@ -13,7 +13,7 @@ import pandas as pd
 # Print start time
 print("Start time: " + str(datetime.now()))
 # Set variables
-basepath= 'C:/Users/N5875/userOpenData/'
+basepath= 'C:/Users/N5875/user/OpenData/'
 file_in = basepath +"input/CFS_2018.csv"
 file_out = basepath + 'output/CFS_dupes.csv'
 # key field value
