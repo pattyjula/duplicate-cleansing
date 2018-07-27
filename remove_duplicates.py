@@ -14,8 +14,8 @@ from pathlib import Path
 
 print("Start time: " + str(datetime.now()))
 timestr = time.strftime("%Y%m%d")
-basepath= 'C:/Users/N5875/GIS/Scripts/OpenData'
-file_in = basepath + '/input/' + "LAPD_Calls_for_Service_2018.csv"
+basepath= 'C:/Users/user/OpenData'
+file_in = basepath + '/input/' + "CFS_2018.csv"
 
 
 try:
@@ -27,7 +27,7 @@ try:
     file_out2 = Path(basepath + '/output/' + 'CFS_dupes.csv')
     if file_out2.is_file():
         print("Duplicates found")
-        file_out = basepath + '/output/' + 'LAPD_Calls_for_Service_2018_clean.csv'
+        file_out = basepath + '/output/' + 'CFS_clean.csv'
         with open(file_in, 'r') as fin, open(file_out, 'w', newline='') as fout:
             reader = csv.reader(fin)
             writer = csv.writer(fout)
