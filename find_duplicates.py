@@ -14,7 +14,7 @@ import pandas as pd
 print("Start time: " + str(datetime.now()))
 # Set variables
 basepath= '/user/OpenData/'
-file_in = basepath +"CFS_2018.csv"
+file_in = basepath +'CFS_2018.csv'
 file_out = basepath + 'CFS_dupes.csv'
 # key field value
 field_name ="Incident_Number"
